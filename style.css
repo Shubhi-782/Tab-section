@@ -1,0 +1,89 @@
+body {
+    margin: 100px 0 0 0;
+    padding: 0;
+    background: #8594E4;
+    font-family: cursive;
+    color: chartreuse;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.section-centre {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1140px;
+    min-width: 430px;
+    padding: 20px 0px;
+}
+
+.tabs {
+    background: #A5C9CA;
+    border-radius: 0.5rem;
+    grid-template-rows: auto 1fr;
+}
+
+.button {
+    background: #B2A4FF;
+    border: none;
+    padding: 0.5rem 0rem;
+    color: #B9005B;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    letter-spacing: 3px;
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.content h3 {
+    color: #293462;
+}
+
+.button:nth-child(1) {
+    border-top-left-radius: 0.5rem;
+}
+
+.button:nth-child(3) {
+    border-top-right-radius: 0.5rem;
+}
+
+.button:hover:not(.live) {
+    background-color: #1CD6CE;
+    color: white;
+}
+
+.tabs-content {
+    padding: 10px 20px;
+}
+
+@media (min-width:990px) {
+    .image {
+        margin-bottom: 0;
+    }
+
+    .section-centre {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+.content {
+    display: none;
+}
+
+.content.live {
+    display: block;
+}
+
+.button.live {
+    background-color: #A5C9CA;
+}
